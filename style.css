@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=DM+Sans&family=Heebo:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=Inter&family=Lato&family=Lora&family=Mukta&family=MuseoModerno&family=Outfit&family=Poppins:wght@400;500;600&family=Prompt&family=Readex+Pro&family=Red+Hat+Mono:wght@400;500&family=Rubik&family=Varela+Round&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Hind Siliguri";
+}
+body
+{
+    background: rgb(241, 240, 240)
+}
+.header
+{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+    padding: 20px 0px;
+}
+.container 
+{
+    width: 90%;
+    margin: 0 auto;
+}
+.nav-bar 
+{
+    display: flex;
+    justify-content: space-between;
+}
+ul 
+{
+    list-style: none;
+    display: flex;
+    line-height: 35px;
+}
+ul li 
+{
+    margin: 0px 30px;
+}
+ul li .harf 
+{
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 20px;
+}
+ul li .gift 
+{
+    color: #F7941E;
+    border: 1px solid #F7941E;
+    padding: 5px 25px;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    transition: 0.2s;
+}
+.gift:hover 
+{
+    transition: 0.2s;
+   border-radius: 20px 0px 20px; 
+   /* color: #ffffff; */
+}
+.harf::before
+{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    bottom: -5px;
+    transform: scale(0);
+    transition: 0.4s transform;
+   transform-origin: left;
+}
+.harf:hover::before
+{
+    transform: scale(1);
+    transform-origin: right;
+}
+.ferra 
+{
+    color: #000000 ;
+    font-style: italic;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 38px;
+    align-items: center;
+    text-decoration: none;
+
+}
+label #btn,
+label #cancel
+{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    right: 30px;
+    font-size: 25px;
+    transform: translate(0, -50%);
+    display: none;
+}
+#check
+{
+    display: none;
+}
+.thank
+{
+    padding-top: 100px;
+}
+.wife 
+{
+   display: flex;
+   justify-content: space-around;
+}
+.grilend
+{
+    padding-top: 155px;
+}
+.grilend h1 
+{
+    font-size: 55px;
+    line-height: 68px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1.2px;
+}
+.grilend p 
+{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin-top: 35px;
+}
+.gif 
+{
+    cursor: pointer;
+    padding: 14px 50px;
+    border-radius: 5px;
+    background-color: #F7941E;
+    border: 1px solid #F7941E;
+    margin-top: 50px;
+    transition: 0.2s;
+}
+.gif:hover{
+    transition: 0.2s;
+    border-radius: 20px 0px 20px 0px;
+}
+.fig:hover{
+    transition: 0.2s;
+    border-radius: 20px 0px 20px 0px;
+}
+.fig 
+{
+    cursor: pointer;
+    padding: 14px 50px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #F7941E;
+    margin-top: 50px;
+    transition: 0.2s;
+}
+.fig a 
+{
+    text-decoration: none;
+    font-style: normal;
+    line-height: 22px;
+    color: #F7941E;
+    font-size: 20px;
+}
+.gif a 
+{
+    text-decoration: none;
+    font-style: normal;
+    line-height: 22px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.boshqa 
+{
+    display: flex;
+    justify-content: space-around;
+}
+.rasm img{
+    max-width: 100%;
+    height: auto;
+}
+.about
+{
+    padding-top: 100px;
+    height: auto;
+}
+.forall
+{
+    text-align: center;
+    padding-top: 100px;
+}
+.forall h1 
+{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 38px;
+}
+.forall p 
+{
+    margin-top: 25px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 25px;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+}
+.archa 
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 65px;
+   padding-left: 135px;
+   padding-right: 135px;
+}
+.oyinchoq
+{
+    width: 270px;
+    height: 400px;
+    background: #ffffff;
+    margin-top: 20px;
+}
+.oyinchoq h2 
+{
+    color: #000000;
+    padding: 24px 24px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.oyinchoq p 
+{
+    font-size: 15px;
+    font-weight: 400px;
+    color: #000000;
+    line-height: 20px;
+    font-style: normal;
+    padding: 14px 24px;
+}
+.ready
+{
+    width: 100%;
+    margin-top: 200px;
+    height: 240px;
+    background: #F7941E;
+}
+.olof 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 180px;
+}
+.left h2
+{
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.we{
+    font-weight: 400;
+}
+.qora 
+{
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 12px 40px;
+    background: #231F20;
+    border: 1px solid #231F20;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.oq
+{
+    cursor: pointer;
+    color: #000000;
+    letter-spacing: 1.2px;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 12px 40px;
+    background: none;
+    border: 1px solid #231F20;
+}
+.blogs 
+{
+    height: 100vh;
+    padding-top: 100px;
+}
+.black
+{
+    display: flex;
+    align-items: center;
+    padding: 75px 135px;
+}
+.tun 
+{
+    width: 100%;
+    height: 373px;
+    background: #231F20;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.tun p 
+{
+    padding: 60px 75px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.tun h1
+{
+   font-size: 40px;
+   color: #ffffff;
+   padding-left: 75px;
+}
+.database
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 135px;
+}
+.foryou
+{
+    width: 570px;
+    height: 300px;
+    background: #ffffff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.foryou h1 
+{
+    padding: 30px 30px;
+    white-space: nowrap;
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: 1.2px;
+}
+.foryou p 
+{
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 33px;
+}
+.foryou h5 
+{
+    font-size: 15px;
+    padding: 10px 30px;
+    font-weight: 500;
+    line-height: 20px;
+}
+footer{
+    margin-top: 300px;
+    width: 100%;
+    background: #fafafafa;
+    height: 450px;
+}
+.songi
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.fot 
+{
+    font-size: 15px;
+    color: #000000;
+    line-height: 20px;
+    margin-right: 90px;
+    text-decoration: none;
+}
+.chiziq
+{
+    border: 1px solid #5a5a5a;
+    width: 1400px;
+    margin-left: 300px;
+    background: #231F20;
+    margin-right: 600px;
+    margin-top: 45px;
+}
+.tramoq
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+.tramoq img 
+{
+ cursor: pointer;
+  margin-right: 25px;
+}
+.pechat 
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 75px;
+}
+@media (max-width: 800px)
+{
+    label #btn 
+    {
+        display: inline-block;
+    }
+   ul{
+      position: fixed;
+      top: 0px;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      padding-top: 120px;
+      display: block;
+      line-height: 60px;
+      background-color: #000000;
+      z-index: 100;
+      transition: 0.5s;
+   }
+   ul li 
+   {
+       margin-left: 50px;
+   }
+   ul li .harf
+   {
+       font-size: 22px;
+       color: #ffffff;
+   }
+   .harf::before{
+       background-color: #F7941E;
+   }
+   .gift:hover 
+      {
+         color: #ffffff;
+      }
+      #check:checked ~ ul 
+      {
+          right: 0;
+      }
+      #check:checked ~ label #btn {
+       display: block;
+      }
+      #check:checked ~ label #cancel
+      {
+          color: #ffffff;
+          display: block;
+          z-index: 101;
+      }
+      .thank
+      {
+          display: flex;
+          flex-direction: column;
+          padding-top: 50px;
+      }
+      .wife 
+      {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+      .grilend
+      {
+          padding-left: 40px;
+      }
+
+      .grilend h1 
+      {
+          font-size: 55px;
+          line-height: 68px;
+          font-weight: 500;
+          font-style: normal;
+          text-align: justify;
+          letter-spacing: 1.2px;
+      }
+      .grilend p 
+      {
+          font-size: 20px;
+          text-align: justify;
+          line-height: 32px;
+          font-weight: 400;
+          letter-spacing: 1.2px;
+          white-space: nowrap;
+          margin-top: 35px;
+      }
+      .gif 
+      {
+          padding: 14px 50px;
+          border-radius: 5px;
+          background-color: #F7941E;
+          border: 1px solid #F7941E;
+          margin-top: 40px;
+          cursor: pointer;
+          /* transform: translateY(-20px); */
+      }
+      .gif a 
+      {
+          text-decoration: none;
+          font-style: normal;
+          line-height: 22px;
+          color: #ffffff;
+          font-size: 20px;
+      }
+      .boshqa 
+      {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 20px;
+      }
+      .rasm
+      {
+          height: auto;
+          margin-top: 15px;
+          max-width: 100%;
+      }
+      .archa 
+           {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding-top: 65px;
+              padding-left: 135px;
+              padding-right: 135px;
+           }
+           .left h2
+            {
+                white-space: nowrap;
+                font-size: 20px;
+                line-height: 35px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+            }
+            .tomon 
+            {
+                display: flex;
+                align-items: center;
+            }
+           .olof 
+             {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+                 padding: none;
+             }
+             .qora 
+                 {
+                     margin-top: 20px;
+                     color: #ffffff;
+                     letter-spacing: 1.2px;
+                     font-size: 15px;
+                     white-space: nowrap;
+                     line-height: 21px;
+                     padding: 12px 35px;
+                     background: #231F20;
+                     border: 1px solid #231F20;
+                     margin-right: 10px;
+                     cursor: pointer;
+                 }
+                 .oq
+                 {
+                     margin-top: 20px;
+                     cursor: pointer;
+                     color: #000000;
+                     white-space: nowrap;
+                     letter-spacing: 1.2px;
+                     font-size: 15px;
+                     line-height: 21px;
+                     padding: 12px 30px;
+                     background: none;
+                     border: 1px solid #231F20;
+                 }
+                 .black
+                   {
+                       display: flex;
+                       /* justify-content: center; */
+                       flex-direction: column;
+                       padding: 75px 135px;
+                   }
+                   .tun 
+                    {
+                        width: 121%;
+                        height: auto;
+                        background: #231F20;
+                        margin-top: 0px;
+                        margin-bottom: 25px;
+                        margin-right: 0px;
+                    }
+                    .tun p 
+                       {
+                           padding: 60px 75px;
+                           color: #ffffff;
+                           font-weight: 500;
+                           letter-spacing: 1.1px;
+                           font-size: 15px;
+                           line-height: 20px;
+                       }
+                       .tun h1
+                       {
+                          font-size: 20px;
+                          color: #ffffff;
+                          padding-left: 75px;
+                       }
+                       .database
+                      {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 10px 35px;
+                      }
+                      .foryou
+                         {
+                             width: 100%;
+                             height: auto;
+                             background: #ffffff;
+                             box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+                             margin-top: 20px;
+                         }
+                         .foryou h1 
+                         {
+                             padding: 30px 30px;
+                             white-space: none;
+                             font-size: 20px;
+                             line-height: 33px;
+                             letter-spacing: 1.2px;
+                         }
+                         .foryou p 
+                         {
+                             padding: 10px 30px;
+                             font-size: 18px;
+                             line-height: 33px;
+                         }
+                         .foryou h5 
+                         {
+                             font-size: 15px;
+                             padding: 10px 30px;
+                             font-weight: 500;
+                             line-height: 20px;
+                         }
+                         footer{
+                            margin-top: 800px;
+                            width: 100%;
+                            background: #fafafafa;
+                            height: 370px;
+                        }
+                        .songi
+                        {
+                            display: none;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding-top: 20px;
+                        }
+                        .fot 
+                        {
+                            font-size: 15px;
+                            color: #000000;
+                            line-height: 20px;
+                            margin-right: 90px;
+                            text-decoration: none;
+                        }
+                        .chiziq
+                        {
+                            display: none;
+                            border: 1px solid #5a5a5a;
+                            width: 1400px;
+                            margin-left: 300px;
+                            background: #231F20;
+                            margin-right: 600px;
+                            margin-top: 45px;
+                        }
+                        .tramoq
+                        {
+                            display: flex;
+                            justify-content: center;
+                            padding-top: 70px;
+                            padding-left: 50px;
+                        }
+                        .tramoq img 
+                        {
+                         cursor: pointer;
+                          margin-right: 25px;
+                        }
+                        .pechat 
+                        {
+                            display: flex;
+                            justify-content: center;
+                            padding-top: 75px;
+                        }
+}
+@media (max-width: 480px)
+{
+    label #btn 
+    {
+        display: inline-block;
+        margin-right: 20px;
+    }
+   ul{
+      position: fixed;
+      top: 0px;
+      right: -100%;
+      width: 80%;
+      height: 100vh;
+      padding-top: 120px;
+      display: block;
+      line-height: 60px;
+      background-color: #000000;
+      z-index: 100;
+      transition: 0.5s;
+   }
+   ul li 
+   {
+       margin-left: 50px;
+   }
+   ul li .harf
+   {
+       font-size: 22px;
+       color: #ffffff;
+   }
+   .harf::before{
+       background-color: #F7941E;
+   }
+   .gift:hover 
+      {
+         color: #ffffff;
+      }
+      #check:checked ~ ul 
+      {
+          right: 0;
+      }
+      #check:checked ~ label #btn {
+       display: block;
+      }
+      #check:checked ~ label #cancel
+      {
+          color: #ffffff;
+          display: block;
+          z-index: 101;
+      }
+      .thank
+      {
+          display: flex;
+          flex-direction: column;
+          padding-top: 50px;
+      }
+      .wife 
+      {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+      .grilend
+      {
+          padding-left: 5px;
+      }
+
+      .grilend h1 
+      {
+          font-size: 55px;
+          line-height: 68px;
+          font-weight: 500;
+          font-style: normal;
+          text-align: justify;
+          letter-spacing: 1.2px;
+      }
+      .grilend p 
+      {
+          font-size: 13px;
+          text-align: justify;
+          line-height: 32px;
+          font-weight: 400;
+          letter-spacing: 1.2px;
+          white-space: nowrap;
+          margin-top: 35px;
+      }
+      .gif 
+      {
+          padding: 10px 40px;
+          border-radius: 5px;
+          background-color: #F7941E;
+          border: 1px solid #F7941E;
+          margin-top: 40px;
+          /* transform: translateY(-20px); */
+      }
+      .gif a 
+      {
+          text-decoration: none;
+          font-style: normal;
+          line-height: 22px;
+          color: #ffffff;
+          font-size: 20px;
+      }
+      .boshqa 
+      {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 20px;
+      }
+      .rasm
+      {
+          height: auto;
+          margin-top: 15px;
+          max-width: 100%;
+      }
+      .tun 
+         {
+             width: 490%;
+             height: auto;
+             background: #231F20;
+             margin-top: 0px;
+             margin-bottom: 25px;
+         }
+         .foryou
+         {
+             width: 100%;
+             height: auto;
+             background: #ffffff;
+             box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+             margin-top: 20px;
+         }
+         .foryou h1 
+         {
+             padding: 30px 20px;
+             white-space: none;
+             font-size: 11px;
+             line-height: 33px;
+             letter-spacing: 1.2px;
+         }
+         .foryou p 
+         {
+             padding: 10px 20px;
+             font-size: 15px;
+             line-height: 33px;
+         }
+         .foryou h5 
+         {
+             font-size: 15px;
+             padding: 10px 20px;
+             font-weight: 500;
+             line-height: 20px;
+         }
+         footer{
+            margin-top: 1300px;
+            width: 100%;
+            background: #fafafafa;
+            height: auto;
+        }
+}
